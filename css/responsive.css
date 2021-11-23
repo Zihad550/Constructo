@@ -1,0 +1,124 @@
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+.container {
+	width: 114rem;
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	html {
+		font-size: 44%;
+	}
+	.container {
+		width: 72rem;
+	}
+
+	.ourlatest_idea_Wrapper {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.footer_div1 {
+		z-index: 1;
+		border-radius: 0.3rem;
+		color: white;
+		position: absolute;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		width: 70rem;
+		height: max-content;
+		place-items: center;
+	}
+	.footer_div2 {
+		top: 38rem;
+	}
+	.footer_div1_subdivs {
+		padding: 3rem 4rem;
+
+		flex-direction: column;
+
+		width: 33rem;
+		background: #f50;
+	}
+	.underline_divs h2:after {
+		right: 32.4rem;
+	}
+	.working_team_img img {
+		width: 100%;
+	}
+	.working_team_text {
+		width: 100%;
+	}
+}
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	html {
+		font-size: 30%;
+	}
+	.container {
+		width: 30rem;
+	}
+
+	.footer_div1 {
+	}
+	.ourlatest_idea_Wrapper {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.meanmenu-reveal span:first-child{/* height: 0.1rem !important; */border: .2rem solid white;}
+}
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	html {
+		font-size: 34%;
+	}
+	.container {
+		width: 48rem;
+	}
+	.bestprojects_Wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.ourlatest_idea_Wrapper {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.best-project-container-2 {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer_div1 {
+	}
+}
